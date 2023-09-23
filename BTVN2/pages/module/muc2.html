@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <style>
+        #form{
+            
+            width: 30%;
+            margin: 0 auto;
+        }
+        input{
+            display: block;
+        }
+    </style>
+    <h1>Change background</h1>
+    <form action="" id="form" >
+
+        <input type="text" id="text">
+        <input type="button" id="btn" value="Tim kiem">
+
+    </form>
+    <script>
+        
+        var btn= document.getElementById("btn");
+        btn.addEventListener('click',function()
+        {
+             var x= document.getElementById("text").value;
+             var body= document.getElementById("body");
+             body.style.background=x;
+            //  var form= document.getElementById("form").style.background=x;
+             
+        console.log(x);
+        });
+       
+        
+    </script>
+</body>
+</html>

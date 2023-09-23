@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        h1{
+            text-align: center;
+            color: red;
+        }
+        body{
+            background-color: rgb(39, 182, 201);
+        }
+        #box{
+            background-color: antiquewhite;
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+    </style> -->
+    <!-- <div id="box">
+        <h1>Ví Dụ Về Tạo Form</h1>
+    <table style="text-align: left; margin: 0 auto; padding: 50px 50px;">
+        
+        <tbody>
+        <tr>
+            <td>Text Box</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Text Aria</td>
+            <td><textarea name="" id="" cols="20" rows="2" ></textarea></td>
+        </tr>
+        <tr>
+            <td>File Box</td>
+            <td><input type="text"></td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td><input type="radio" value=""></td>
+            <td>Radio Button</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" value=""></td>
+            <td>Checkbox</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+            <td><input type="submit" value="Reset"></td>
+        </tr>
+       </tbody>
+    </table>
+    </div> -->
+    <input type="text" id="text1" onblur="roikhoi()"><br>
+    <input type="text" id="text2">
+    <script>
+        function roikhoi()
+        {
+            var x= document.getElementById("text1").value;
+            var y= document.getElementById("text2");
+            var k="";
+            for(let i=0;i<x.length;i++)
+            {
+                if(x[i]>='A'&& x[i]<='Z')
+                {
+                    k += (x[i].toLowerCase()); 
+                }
+              else if(x[i]>='a'&& x[i]<='z')  k += x[i].toUpperCase(); 
+            
+            }
+          
+            y.value=k;
+        }
+    </script>
+</body>
+</html>

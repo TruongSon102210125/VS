@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function blurr()
+      {
+        var x= document.getElementById("ip").value;
+        var y= x.toUpperCase();
+        document.getElementById("ip").value=y;
+      }
+    </script>
+    <h1>Change toUpperCase</h1>
+    <input type="text" id="ip" onblur="blurr()">
+</body>
+</html>

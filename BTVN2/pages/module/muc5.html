@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #result{
+            color: red;
+
+        }
+    </style>
+    <table style="text-align: left; margin: 0 auto; background-color: antiquewhite; padding: 30px 30px; ">
+        <tbody>
+            <tr>
+                <td></td>
+                <td><h2 style="text-align: left; padding-left:30px;">Login</h2></td>
+            </tr>
+            <tr>
+                <td><label for="" >Username</label></td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td><label for="">password</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="OK" onclick="Attention()"><input type="submit" value="RESET"></td>
+            </tr>
+            <tr><td></td>
+                <td> <p id="result"></p></td>
+            </tr>
+           
+        </tbody>
+    </table>
+    <script>
+        function Attention()
+        {
+            
+            var us= document.getElementById("username");
+            var pa= document.getElementById("password");
+            var rs= document.getElementById("result");
+            if(pa.value=="" && us.value=="")
+            {
+                rs.innerHTML="Loi chua nhap user va passs";
+            }
+           else if(us.value=="")
+            {
+                rs.innerHTML="Loi chua nhap username";
+            }
+           else if(pa.value=="")
+            {
+                rs.innerHTML="Loi chua nhap password";
+            }
+
+        }
+    </script>
+</body>
+</html>
